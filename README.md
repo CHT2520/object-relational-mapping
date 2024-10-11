@@ -1,6 +1,6 @@
 # Object Relational Mapping (ORM)
 
-This practical looks at simple implementations of two ORM patterns, Active Record and Data Mapper.
+This practical looks at simple implementations of two ORM patterns, Active Record and Data Mapper. It's the same OO MVC example we looked at earlier but the model layer uses ORM.
 
 - First, find the file _DbConnect.php_ and make changes to the connection settings so they match your database.
 
