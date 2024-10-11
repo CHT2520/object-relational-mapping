@@ -25,7 +25,7 @@ if ($action === "/") {
     //Call create() in filmController
     $filmController->create();
 } else if ($action === "about") {
-    //Call create() in filmController
+    //Call about() in filmController
     $filmController->about();
 } else if ($action === "store") {
     //Call store() in filmController
