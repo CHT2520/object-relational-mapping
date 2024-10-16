@@ -77,7 +77,7 @@ You should find that you can still view and add films. However, now the app is u
 
 Note the difference between the Active Record pattern and Data Mapper.
 
-### Test Your Understanding
+### Testing Your Understanding
 
 Can you get the _edit_, _update_ and _delete_ functions to work.
 
