@@ -49,37 +49,14 @@ class FilmController extends BaseController
 	}
 	function edit()
 	{
-		//Get the id from the query string e.g. for show.php?id=2, $_GET['id'] has a value of 2
-		$id = $_GET['id'];
-		//Get the specific film from the model
-		$film = $this->filmMapper->findById($id);
-		//Load the view
-		$this->loadView("edit.view", ["film" => $film]);
+		//add your code in here
 	}
 	function update()
 	{
-		//get the data from the form
-		$id = $_POST['id'];
-		$title = $_POST['title'];
-		$year = $_POST['year'];
-		$duration = $_POST['duration'];
-		//Find the film
-		$film = $this->filmMapper->findById($id);
-		//Update the film's details
-		$film->title =  $title;
-		$film->year =  $year;
-		$film->duration =  $duration;
-		//As the mapper to save the film
-		$this->filmMapper->persist($film);
-		//Redirect the user to the home page
-		header('Location: ./index.php');
+		//add your code in here
 	}
 	function destroy()
 	{
-		$id = $_POST['id'];
-		$film = $this->filmMapper->findById($id);
-		$this->filmMapper->delete($film);
-		//Redirect the user to the home page
-		header('Location: ./index.php');
+		//add your code in here
 	}
 }

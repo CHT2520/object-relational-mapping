@@ -4,7 +4,7 @@ This practical looks at simple implementations of two ORM patterns, Active Recor
 
 - First, find the file _DbConnect.php_ and make changes to the connection settings so they match your database.
 
-- Test the website. You should be able to view and add new films, the edit and delete functionality won't work.
+- Test the website. You should be able to view and add new films, the edit, update and delete functionality won't work.
 
 ## The Active Record Pattern
 
@@ -43,11 +43,11 @@ echo "<p>Year:{$film->year} ({$film->getAge()} years old)</p>";
 
 Can you get the _edit_, _update_ and _delete_ functions to work.
 
-You don't need to make any changes to _Film.php_, and the _edit.view.php_ has already been created. You only need to make changes to the `FilmController` so that it use the `Film` model to execute actions.
+You don't need to make any changes to _Film.php_, and the _edit.view.php_ has already been created. You only need to make changes to the `FilmController` so that it use the `Film` model to execute actions, and _index.php_ to do the routing.
 
 ## Data Mapper
 
-An alternative to Active Record is the Data Mapper pattern. The mapper class is responsible for working with the database - insert, delete etc. Domain objects (Film) don't need any knowledge of the database.
+An alternative to Active Record is the Data Mapper pattern. The mapper class is responsible for working with the database - insert, delete etc. The advantage is that Domain objects (e.g. Film) don't need any knowledge of the database.
 
 - Open _Models/DataMapper/Film.php_
 - Note that it is much simpler than the active record example, there isn't any code in here for working with a database.
