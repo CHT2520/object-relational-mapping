@@ -4,7 +4,6 @@ require("./views/partials/header.php");
 // Display the film's details. There is a single film, so we don't need a foreach loop
 echo "<h1>{$film->title}</h1>";
 echo "<p>Year:{$film->year} ({$film->getAge()} years old)</p>";
-echo "<p>Duration:{$film->duration}</p>";
 
 
 // Link to the edit page, passing the film's id in the query string e.g. edit.php?id=3
