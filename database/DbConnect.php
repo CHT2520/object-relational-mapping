@@ -12,7 +12,7 @@ class DbConnect
     {
         if (!self::$conn) {
             try {
-                self::$conn = $conn = new PDO('mysql:host=localhost;dbname=MyDatabase', 'MyUsername', 'MyPassword');
+                self::$conn = new PDO('mysql:host=localhost;dbname=MyDatabase', 'MyUsername', 'MyPassword');
             } catch (PDOException $exception) {
                 echo "Oh no, there was a problem" . $exception->getMessage();
             }
