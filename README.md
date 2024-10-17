@@ -43,8 +43,8 @@ echo "<p>Year:{$film->year} ({$film->getAge()} years old)</p>";
 - Modify *show.view.php* so that it also displays the duration of the film.
 - Can you get the _edit_, _update_ and _delete_ functions to work.
 -You don't need to make any changes to _Film.php_, and the _edit.view.php_ has already been created. You only need to make changes to the `FilmController` so that it uses the `Film` model to execute actions, and _index.php_ to do the routing.
-	- For the edit you will need to get the selected film's *id* value from the query string, call the static ```find()``` method of the Film class, and then load *edit.view.php*. This is going to be very similar to the ```show()``` method. 
- 	- For update you will need to get the selected film's *id* value from the form, call the static ```find()``` method of the Film class. You then need set the properties of this object using values from the form, and finally call the ```save()``` method on this object. Have a look in the ```store()``` method for a similar example.  
+	- For the edit you will need to get the selected film's *id* value from the query string, call the static ```find()``` method of the Film class, and then load *edit.view.php*. This is going to be very similar to the FilmController's ```show()``` method. 
+ 	- For update you will need to get the selected film's *id* value from the form, call the static ```find()``` method of the Film class. You then need set the properties of this object using values from the form, and finally call the ```save()``` method on this object. Have a look in the FilmController's ```store()``` method for a similar example.  
 
 ## Data Mapper
 
