@@ -75,7 +75,17 @@ You should find that you can still view and add films. However, now the app is u
 		header('Location: ./index.php');
 	}
 ```
-
+or
+```php
+function show()
+	{
+		//Get the id from the query string e.g. for index.php?action=show&id=2, $_GET['id'] has a value of 2
+		$id = $_GET['id'];
+		//Get the film from the model
+		$film = $this->filmMapper->findById($id);
+		$this->loadView("show.view", ["film" => $film]);
+	}
+```
 Note the difference between the Active Record pattern and Data Mapper.
 
 ### Testing Your Understanding
